@@ -3,7 +3,7 @@ import aboutVideo from '../assets/videos/icvideo1.mp4'
 
 const About = () => {
   return (
-    <section id='about' className='w-full h-screen pt-10'>
+    <section id='about' className='w-full pt-10'>
       <div className='flex flex-col lg:flex-row gap-y-8 px-4 lg:px-0 items-center text-center justify-around'>
         <div className='flex flex-col gap-y-4 lg:flex-1/2 lg:w-[50%]'>
           <h2 className='text-primary text-3xl lg:text-4xl'>Quem Somos</h2>
@@ -17,7 +17,7 @@ const About = () => {
           autoPlay 
           muted
           loop
-          className='w-[600px] h-[600px] object-cover border-4 border-primary p-1 lg:mt-12' >
+          className='w-[600px] h-[400px] lg:h-[600px] object-cover border-4 border-primary p-1 lg:mt-12' >
         </video>
       </div>
     </section>
