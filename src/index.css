@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,6 +10,7 @@ html {
 
 * {
   box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 body {
@@ -20,15 +23,6 @@ body {
   background: linear-gradient(144deg, rgba(178,153,86,1) 0%, rgba(255,255,240,1) 75%); 
 }
 
-#about {
-  position: relative;
-  z-index: -10;
-  /* background: rgb(178,153,86);
-  background: linear-gradient(217deg, rgba(178,153,86,1) 0%, rgba(255,255,240,1) 75%);  */
-}
-
-
-
 .slick-dots li.slick-active button::before {
   color: #b29956 !important;
 }
@@ -40,4 +34,8 @@ body {
 
 .slick-prev:before, .slick-next:before {
   color: #b29956 !important;
+}
+
+footer {
+  background-color: #997542;
 }
