@@ -1,8 +1,11 @@
 import { 
   Navbar, 
   About, 
-  Hero } 
-  from './sections'
+  Hero,
+  Contact 
+} from './sections'
+import Footer from './sections/Footer'
+
 import Services from './sections/Services'
 
 function App() {
@@ -15,6 +18,8 @@ function App() {
       <Hero />
       <About />
       <Services />
+      <Contact />
+      <Footer />
     </>
   )
 }
