@@ -42,7 +42,7 @@ const ServicesCards = () => {
         <Slider {...settings}>
             {icImages.map((image, index) => (
               <div key={index}>
-                <img src={image} alt={`Imagem ${index}`} className="w-[380px] max-h-80 border-2 border-primary p-1 " />
+                <img src={image} alt={`Imagem ${index}`} className="w-full lg:w-[380px] max-h-[400px] border-2 border-primary p-1 " />
               </div>
             ))}
         </Slider>
