@@ -3,7 +3,7 @@ import ServicesCards from '../components/ServicesCards'
 
 const Services = () => {
   return (
-    <section id='services' className='w-full h-screen pt-60 lg:pt-28'>
+    <section id='services' className='w-full h-screen mt-80 lg:mt-12 lg:pt-16 text-center'>
       <div className='flex flex-col-reverse lg:flex-row gap-x-8 px-4 lg:px-0  items-center'>
         <ServicesCards />
         <div className='flex flex-col gap-y-4 lg:w-[100%]'>
