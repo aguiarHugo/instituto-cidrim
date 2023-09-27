@@ -5,11 +5,11 @@ import { FiInstagram } from 'react-icons/fi'
 import { FiFacebook } from 'react-icons/fi'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
-import logo from '../../public/logo.png'
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
   return (
-    <nav className='w-full border-b-2 border-primary fixed bg-secondary'>
+    <nav className='w-full border-b-2 border-primary fixed z-100 bg-secondary' style={{ zIndex: 9999 }}>
         <div className='flex items-center justify-between sm:px-4 py-1'>
             <a href="">
                 <img 
@@ -43,14 +43,6 @@ const Navbar = () => {
                         href="#contact"
                         >
                             Contato
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                        className='hover:opacity-70 transition duration-300'
-                        href="#location"
-                        >
-                            Localização
                         </a>
                     </li>
                 </ul>
