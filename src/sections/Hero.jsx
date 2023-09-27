@@ -1,11 +1,11 @@
-import hero from '../../public/hero.png'
+import hero from '../assets/hero.png'
 const Hero = () => {
   return (
-    <section id='hero' className='w-full h-screen flex justify-center items-center'>
+    <section id='hero' className='w-full flex justify-center items-center py-36'>
         <img 
             src={hero} 
             alt="Instituto Cidrim" 
-            className='w-[400px] h-[600px] sm:w-[600px] -mt-16'
+            className='w-[300px] h-[400px] md:h-[600px] md:w-[600px]'
         />
     </section>
   )
