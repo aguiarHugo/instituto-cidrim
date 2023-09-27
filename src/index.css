@@ -27,6 +27,11 @@ body {
   background: linear-gradient(217deg, rgba(178,153,86,1) 0%, rgba(255,255,240,1) 75%);  */
 }
 
+#services {
+  background: rgb(178,153,86);
+  background: linear-gradient(144deg, rgba(178,153,86,1) 0%, rgba(255,255,240,1) 75%); 
+}
+
 .slick-dots li.slick-active button::before {
   color: #b29956 !important;
 }
