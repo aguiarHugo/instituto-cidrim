@@ -8,16 +8,24 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import logo from '../assets/logo.png'
 
 const Navbar = () => {
+    
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth', 
+        });
+      };
+
   return (
     <nav className='w-full border-b-2 border-primary fixed z-100 bg-secondary' style={{ zIndex: 9999 }}>
         <div className='flex items-center justify-between sm:px-4 py-1'>
-            <a href="">
+            <button onClick={scrollToTop}>
                 <img 
                     src={logo} 
                     alt="Logo" 
                     className='w-[100px]'
                 />
-            </a>
+            </button>
             {/* DESKTOP */}
             <div className='hidden md:flex'>
                 <ul className='flex gap-x-16 text-primary text-[18px] lg:text-[20px]'>
