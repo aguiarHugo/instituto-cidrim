@@ -4,14 +4,16 @@ import {
   Hero,
   Contact 
 } from './sections'
-import Footer from './sections/Footer'
 
+import { AnimatePresence } from 'framer-motion'
+
+import Footer from './sections/Footer'
 import Services from './sections/Services'
 
 function App() {
 
   return (
-    <>
+    <AnimatePresence>
       <header>
         <Navbar />
       </header>
@@ -20,7 +22,7 @@ function App() {
       <Services />
       <Contact />
       <Footer />
-    </>
+    </AnimatePresence>
   )
 }
 

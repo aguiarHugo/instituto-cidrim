@@ -2,6 +2,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import { motion } from 'framer-motion';
+
 
 import ic1 from '../assets/ic1.jpeg';
 import ic2 from '../assets/ic2.jpeg';
@@ -38,7 +40,17 @@ const ServicesCards = () => {
   };
 
   return (
-      <div className='w-full lg:w-[900px] py-12 px-[71px] lg:px-12 mx-auto cursor-pointer'>
+      <motion.div 
+        className='w-full lg:w-[900px] py-12 px-[71px] lg:px-12 mx-auto cursor-pointer'
+        initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3}}
+            transition={{ duration: 1 }}
+            variants={{ 
+              hidden: { opacity:0, x:-50 },
+              visible: { opacity:1, x:0 }
+            }}
+      >
         <Slider {...settings}>
             {icImages.map((image, index) => (
               <div key={index}>
@@ -46,7 +58,7 @@ const ServicesCards = () => {
               </div>
             ))}
         </Slider>
-      </div>
+      </motion.div>
   )
 }
 
